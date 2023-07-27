@@ -14,7 +14,7 @@ This node enables asynchronous level loading. So unlike the OpenLevel node, the 
 
 It also comes with a loading screen widget.
 
-sorry
+<b>sorry</b>
 
 Observed an issue when loading levels with world partitions.
 
