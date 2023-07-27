@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.1",
+	"FriendlyName": "AsyncLevelLoad",
+	"Description": "This plugin allows asynchronous level loading. It also comes with a loading screen widget.",
+	"Category": "Blueprints",
+	"CreatedBy": "roy00227",
+	"CreatedByURL": "https://twitter.com/roy002271",
+	"DocsURL": "https://youtu.be/Mda-TK7-a18",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/fedd4da327a946a1ae5461da851ffcf1",
+	"SupportURL": "roy00227games@gmail.com",
+	"EngineVersion": "5.2.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "AsyncLevelLoad",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}
