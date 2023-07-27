@@ -35,6 +35,8 @@ Network Replicated: No
 Supported Development Platforms: Win64
 Supported Target Build Platforms: Win64
 
+<br>
+Put it in the Plugins folder of your project folder.<br>
+![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/34e6b65b-8ec1-450d-bdc1-591abdfa2dbc)<br>
+![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/a57ef635-a60a-40ae-89f3-bb15d4a1a36d)
 
-Put it in the Plugins folder of your project folder.
-![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/34e6b65b-8ec1-450d-bdc1-591abdfa2dbc)
