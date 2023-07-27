@@ -1,5 +1,4 @@
 # AsyncLevelLoad　
-# While editing. file is incomplete（While editing）
 
 AsyncLevelLoad is a plugin for UnrealEngine.
 
