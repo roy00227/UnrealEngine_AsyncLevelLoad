@@ -35,9 +35,9 @@ Network Replicated: No
 Supported Development Platforms: Win64
 Supported Target Build Platforms: Win64
 
-Download the zip file and extract it.
 
-![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/fce1050d-c63b-4ca0-ac13-509702d9559b)
+Download the zip file and extract it.
+![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/56d511e7-fa44-4042-93cc-8c06c072f399)
 
 Put it in the Plugins folder of your project folder.
 
