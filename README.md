@@ -45,5 +45,6 @@ Put it in the Plugins folder of your project folder.
 
 ![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/34e6b65b-8ec1-450d-bdc1-591abdfa2dbc)
 
-![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/a57ef635-a60a-40ae-89f3-bb15d4a1a36d)
+![image](https://github.com/roy00227/AsyncLevelLoad/assets/100113338/20b36cf5-34f7-4020-9aed-0b4167eba97e)
+
 
