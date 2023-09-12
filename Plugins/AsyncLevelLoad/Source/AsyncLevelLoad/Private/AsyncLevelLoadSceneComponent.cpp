@@ -1,3 +1,4 @@
+//AsyncLevelLoadSceneComponent.cpp
 // Copyright 2023, roy00227, All rights reserved
 
 
@@ -15,17 +16,17 @@ void UAsyncLevelLoadSceneComponent::AsyncLevelLoad(const FString& LevelDir, cons
 {
 
 	LoadPackageAsync(LevelDir + LevelName,
-		FLoadPackageAsyncDelegate::CreateLambda([=](const FName& PackageName, UPackage* LoadedPackage, EAsyncLoadingResult::Type Result)
+		FLoadPackageAsyncDelegate::CreateLambda([this, LevelDir, LevelName](const FName& PackageName, UPackage* LoadedPackage, EAsyncLoadingResult::Type Result)
 			{
 				if (Result == EAsyncLoadingResult::Succeeded)
 				{
-					AsyncLevelLoadFinished(LevelName);
+					UGameplayStatics::OpenLevel(this, FName(*(LevelDir + LevelName)));
 				}
 
 			}
 		),
 		0,
-				PKG_ContainsMap);
+		PKG_ContainsMap);
 }
 
 void UAsyncLevelLoadSceneComponent::AsyncLevelLoadByObjectReference(TSoftObjectPtr<UWorld> WorldSoftObject)
@@ -34,7 +35,7 @@ void UAsyncLevelLoadSceneComponent::AsyncLevelLoadByObjectReference(TSoftObjectP
 	FString LevelPath = WorldSoftObject.ToString();
 
 	LoadPackageAsync(LevelPath,
-		FLoadPackageAsyncDelegate::CreateLambda([=](const FName& PackageName, UPackage* LoadedPackage, EAsyncLoadingResult::Type Result)
+		FLoadPackageAsyncDelegate::CreateLambda([this, WorldSoftObject](const FName& PackageName, UPackage* LoadedPackage, EAsyncLoadingResult::Type Result)
 			{
 				if (Result == EAsyncLoadingResult::Succeeded)
 				{
@@ -44,14 +45,9 @@ void UAsyncLevelLoadSceneComponent::AsyncLevelLoadByObjectReference(TSoftObjectP
 			}
 		),
 		0,
-				PKG_ContainsMap);
+		PKG_ContainsMap);
 }
 
-void UAsyncLevelLoadSceneComponent::AsyncLevelLoadFinished(const FString LevelName)
-{
-	UGameplayStatics::OpenLevel(this, FName(*LevelName));
-
-}
 
 
 
@@ -65,29 +61,3 @@ UAsyncLevelLoadSceneComponent::UAsyncLevelLoadSceneComponent()
 	// ...
 }
 
-
-// Called when the game starts
-void UAsyncLevelLoadSceneComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-
-}
-
-
-// Called every frame
-void UAsyncLevelLoadSceneComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
-}
-
-/*
-float UAsyncLevelLoadSceneComponent::GetLoadPercentage()
-{
-
-
-}
-*/
