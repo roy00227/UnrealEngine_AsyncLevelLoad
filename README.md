@@ -2,7 +2,6 @@
 
 AsyncLevelLoad is a plugin for UnrealEngine.
 
-Only 5.1 and 5.2 have been confirmed to work. There is no guarantee that it will work on other versions.
 
 [marketplace](https://www.unrealengine.com/marketplace/ja/product/fedd4da327a946a1ae5461da851ffcf1)
 
