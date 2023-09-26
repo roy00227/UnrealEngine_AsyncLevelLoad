@@ -31,11 +31,18 @@ Features:
 
 Code Modules:
 ・AsyncLevelLoad[Runtime]
+
 Number of C++ Classes: 2
+
 Number of Widgets: 1
+
 Network Replicated: No
+
 Supported Development Platforms: Win64
-Supported Target Build Platforms: Win64
+
+Supported Target Build Platforms: Win64, Mac, IOS, Android,  Linux, LinuxArm64,	TVOS
+
+Tested Target Build Platforms: Win64
 
 
 Download the zip file and extract it.
